@@ -1,0 +1,123 @@
+
+.vehicle-panel {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  background: #D2D5DB;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.letter-panel-box {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.vehicle-panel-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rpx;
+  align-items: center;
+}
+.vehicle-panel-row-last{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35rpx;
+  padding-top: 10rpx;
+}
+.vehicle-panel-row-button {
+  background-color: #fff;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 63rpx;
+  height: 84rpx;
+  text-align: center;
+  line-height: 86rpx;
+  font-size: 46rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 0 0 rgba(0,0,0,0.35);
+  border-radius: 10rpx;
+}
+.vehicle-panel-row-button-last {
+  width: 85rpx;
+  height: 84rpx;
+  line-height: 86rpx;
+}
+.vehicle-hover:active {
+  background-color: #ccc;
+}
+.vehicle-panel-row-button-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(171,179,189,0.50);
+}
+.vehicle-en-button-delete {
+  width: 46rpx;
+  height: 34rpx;
+}
+.vehicle-panel-row-button-img:active{
+  background-color: #fff;
+}
+.vehicle-panel-ok {
+  background-color: #4287FF;
+  width: 180rpx;
+  height: 84rpx;
+  font-family: 'PingFangSC-Medium';
+  font-size: 32rpx;
+  color: #fff;
+}
+.vehicle-panel-ok:active{
+  background-color: #4B71E6;
+}
+.adaptive{
+  width: 750rpx;
+  height: 60rpx;
+  background: #D2D5DB;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  bottom: 0
+}
+/* 数字键盘样式 */
+.number-panel-box {
+  display: flex;
+  width: 750rpx;
+}
+.number-panel-row {
+  display: flex;
+  background: rgba(210,213,219,0.90);
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 7rpx;
+  padding-bottom: 0;
+}
+.number-panel-row-key {
+  background-color: #fff;
+  margin: 7rpx;
+  padding: 5rpx;
+  width: 220rpx;
+  height: 94rpx;
+  text-align: center;
+  line-height: 94rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.35);
+  font-size: 50rpx;
+}
+.number-panel-row-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(210,213,219,0.90);
+  width: 220rpx;
+  height: 94rpx;
+  border-radius: 10rpx;
+  margin: 7rpx;
+  padding: 5rpx;
+}
+.number-panel-img image {
+  width: 70rpx;
+  height: 105rpx;
+}
