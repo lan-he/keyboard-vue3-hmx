@@ -30,9 +30,6 @@ Component({
     }
   },
   methods: {
-    longPressDelete(){//长按清除
-      this.props.onLongPressDelete()
-    },
     vehicleTap: function (event) {
       // console.log(event,'....')
       let val = event.target.dataset.value;
@@ -47,6 +44,10 @@ Component({
         default:
           this.props.onInputChange(val);
       }
+    },
+    longPressDelete(){
+      //长按清除
+      this.props.onLongPressDelete()
     },
   }
 });
