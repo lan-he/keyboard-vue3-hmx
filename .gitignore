@@ -23,9 +23,10 @@ yarn-error.log*
 # 以下是新增的
 # 要忽略目录和指定文件
 .vscode
-examples/
-packages/
-public/
-vite.config.js
+lib/
+# examples/
+# packages/
+# public/
+# vite.config.js
+# *.html
 *.map
-*.html
