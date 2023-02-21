@@ -1,9 +1,11 @@
 {
     "name": "keyboard-hmx-vue3",
     "private": false,
-    "version": "0.0.5",
+    "version": "0.0.1",
     "license": "ISC",
     "keywords": [
+        "hemingxuan",
+        "hemingxuann",
         "typewriting",
         "key-board",
         "keyboard-hmx-vue3",
@@ -19,7 +21,7 @@
     "files": [
         "lib"
     ],
-    "main": "lib/key-board-hmx-vue3.umd.cjs",
+    "main": "lib/keyboard-hmx-vue3.umd.cjs",
     "dependencies": {
         "vue": "^3.2.45"
     },

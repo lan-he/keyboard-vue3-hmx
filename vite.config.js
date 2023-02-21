@@ -8,8 +8,8 @@ export default defineConfig({
         outDir: 'lib',
         lib: {
             entry: resolve(__dirname, 'packages/index.ts'), //指定组件编译入口文件
-            name: 'keyBoardHmxVue3',
-            fileName: 'key-board-hmx-vue3',
+            name: 'keyboardHmxVue3',
+            fileName: 'keyboard-hmx-vue3',
         }, //库编译模式配置
         rollupOptions: {
             // 确保外部化处理那些你不想打包进库的依赖
