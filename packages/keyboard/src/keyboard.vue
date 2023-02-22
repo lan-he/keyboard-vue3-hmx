@@ -10,7 +10,7 @@ const props = defineProps({
         default: () => 800,
     },
 })
-const emit = defineEmits(['inputKey'])
+const emit = defineEmits(['inputKey', 'inputDelete'])
 onMounted(() => {})
 const keyEnInput1 = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P']
 const keyEnInput2 = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L']
@@ -18,9 +18,13 @@ const keyEnInput3 = ['Z', 'X', 'C', 'V', 'B', 'N', 'M']
 const touchstartButton = (e) => {
     e.target.style.background = `#acb0bb`
 }
-const touchendButton = (e, item) => {
+const touchendButton = (e, type, item) => {
     e.target.style.background = `#ffffff`
-    emit('inputKey', item)
+    if (type === 'delete') {
+        emit('inputDelete')
+    } else {
+        emit('inputKey', item)
+    }
 }
 </script>
 <template>
@@ -30,7 +34,7 @@ const touchendButton = (e, item) => {
                 class="keyboard-item__keyboardhmx button__boxshadow"
                 v-for="item in keyEnInput1"
                 @touchstart="touchstartButton"
-                @touchend="touchendButton($event, item)">
+                @touchend="touchendButton($event, 'input', item)">
                 {{ item }}
             </div>
         </div>
@@ -39,7 +43,7 @@ const touchendButton = (e, item) => {
                 class="keyboard-item__keyboardhmx button__boxshadow"
                 v-for="item in keyEnInput2"
                 @touchstart="touchstartButton"
-                @touchend="touchendButton($event, item)">
+                @touchend="touchendButton($event, 'input', item)">
                 {{ item }}
             </div>
         </div>
@@ -65,11 +69,13 @@ const touchendButton = (e, item) => {
                 class="keyboard-item__keyboardhmx button__boxshadow"
                 v-for="item in keyEnInput3"
                 @touchstart="touchstartButton"
-                @touchend="touchendButton($event, item)">
+                @touchend="touchendButton($event, 'input', item)">
                 {{ item }}
             </div>
             <div
-                class="operation-button__keyboardhmx peration-button-right__keyboardhmx button__boxshadow">
+                class="operation-button__keyboardhmx peration-button-right__keyboardhmx button__boxshadow"
+                @touchstart="touchstartButton"
+                @touchend="touchendButton($event, 'delete', '')">
                 <svg
                     t="1676971082940"
                     class="icon"
@@ -90,7 +96,7 @@ const touchendButton = (e, item) => {
             <div
                 class="space__keyboardhmx button__boxshadow"
                 @touchstart="touchstartButton"
-                @touchend="touchendButton($event, `&nbsp;`)">
+                @touchend="touchendButton($event, 'input', `&nbsp;`)">
                 space
             </div>
             <div class="ok__keyboardhmx button__boxshadow">ok</div>
