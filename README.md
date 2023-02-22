@@ -1,5 +1,7 @@
 # 基于 VUE3 开发的 keyboard 移动端弹出键盘
 
+> 开发：何明暄 美术：高俊宁
+
 <div align=left>
     github地址：
     <a href="https://github.com/mingxuann/keyboard-vue3-hmx" target="_blank">github</a> 
