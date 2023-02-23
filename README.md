@@ -4,7 +4,7 @@
 
 <div align=left>
     github地址：
-    <a href="https://github.com/mingxuann/keyboard-vue3-hmx" target="_blank">github</a> 
+    <a href="https://github.com/hemingxuann/keyboard-vue3-hmx" target="_blank">github</a> 
 </div>  
 <div align=left>
 npm地址： 
@@ -29,8 +29,8 @@ yarn add keyboard-vue3-hmx
 
 ```js
 // main.js
-import keyBoardHmxVue3 from 'key-board-hmx-vue3'
-import 'key-board-hmx-vue3/lib/style.css'
+import keyBoardHmxVue3 from 'keyboard-vue3-hmx'
+import 'keyboard-vue3-hmx/lib/style.css'
 
 createApp(App).use(keyBoardHmxVue3).mount('#app')
 ```
