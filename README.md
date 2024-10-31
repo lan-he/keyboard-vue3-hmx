@@ -23,17 +23,17 @@
 ## 安装
 
 ```sh
-npm i keyboard-vue3-hmx
+npm i keyboard-vue3-lanhe
 // or
-yarn add keyboard-vue3-hmx
+yarn add keyboard-vue3-lanhe
 ```
 
 ## 使用
 
 ```js
 // main.js
-import keyBoardHmxVue3 from 'keyboard-vue3-hmx'
-import 'keyboard-vue3-hmx/lib/style.css'
+import keyBoardHmxVue3 from 'keyboard-vue3-lanhe'
+import 'keyboard-vue3-lanhe/lib/style.css'
 
 createApp(App).use(keyBoardHmxVue3).mount('#app')
 ```
