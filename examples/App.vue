@@ -16,6 +16,5 @@ const inputDelete = (item) => {
         <input type="text" style="width: 90%" v-model="msgs" />
     </div>
     <Keyboard @inputKey="inputKey" @inputDelete="inputDelete" />
-    <!-- <FalseTextbox /> -->
 </template>
 <style scoped></style>

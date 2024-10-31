@@ -1,16 +1,16 @@
 {
-    "name": "keyboard-vue3-hmx",
+    "name": "keyboard-vue3-lanhe",
     "private": false,
-    "version": "0.0.3",
+    "version": "0.0.4",
     "license": "ISC",
     "keywords": [
-        "hemingxuan",
-        "hemingxuann",
-        "typewriting",
         "key-board",
-        "keyboard-vue3-hmx",
+        "kvue3",
+        "keyboard-vue3-lanhe",
         "inputting method",
-        "key panel"
+        "key panel",
+        "hemingxuan",
+        "typewriting"
     ],
     "type": "module",
     "scripts": {
@@ -21,7 +21,8 @@
     "files": [
         "lib"
     ],
-    "main": "lib/keyboard-vue3-hmx.umd.cjs",
+    "base": "/keyboard-vue3-lanhe/",
+    "main": "lib/keyboard-vue3-lanhe.umd.cjs",
     "dependencies": {
         "vue": "^3.2.45"
     },

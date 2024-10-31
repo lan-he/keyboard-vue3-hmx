@@ -1,14 +1,17 @@
+# Mobile pop-up keyboard developed based on Vue 3
+
 # 基于 VUE3 开发的 keyboard 移动端弹出键盘
 
-> 开发：何明暄 美术：高俊宁
+> Developer: lanhe  
+> UI：高俊宁
 
 <div align=left>
     github地址：
-    <a href="https://github.com/hemingxuann/keyboard-vue3-hmx" target="_blank">github</a> 
+    <a href="https://github.com/lan-he/keyboard-vue3-lanhe" target="_blank">github</a> 
 </div>  
 <div align=left>
-npm地址： 
-    <a href="https://www.npmjs.com/package/keyboard-vue3-hmx" target="_blank">npm</a>
+    npm地址： 
+    <a href="https://www.npmjs.com/package/keyboard-vue3-lanhe" target="_blank">npm</a>
 </div>
 
 ---
